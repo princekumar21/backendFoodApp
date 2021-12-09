@@ -2,13 +2,11 @@ const { response } = require("express");
 const express = require("express");
 const app = express();
 
-//if we want to access cookies through request then we have to use cookie-parser 
+//if we want to access cookies through request then we have to use cookie-parser
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
 app.use(express.json());
-
-
 
 app.listen("5000", () => {
   console.log("listening to 5000");

@@ -5,8 +5,6 @@ const { JWT_KEY } = require("../secrets");
 let { sendMail } = require("../nodemailer");
 let { otp } = require("../nodemailer");
 const bcrypt = require("bcrypt");
-// const otp = require("../nodemailer");
-console.log("val" + otp);
 
 //importing userModel from user
 const userModel = require("../model/userModel");

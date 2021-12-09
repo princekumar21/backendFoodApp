@@ -6,7 +6,6 @@ let otp = Math.random();
 otp = otp * 100000;
 otp = parseInt(otp);
 
-
 async function sendMail(userObj) {
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -17,9 +16,6 @@ async function sendMail(userObj) {
       pass: "qsydvctjacklrubc", // generated ethereal password
     },
   });
-
- 
-  
 
   var Usersubject, Userhtml, Usertext;
 

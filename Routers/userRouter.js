@@ -27,7 +27,7 @@ async function getUsers(req, res) {
       message: error.message,
     });
   }
-  // res.json(users);
+  
 }
 
 

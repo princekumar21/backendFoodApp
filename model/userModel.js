@@ -43,7 +43,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     require: true,
     min: 8,
-   
   },
 
   otp_Verify: {
@@ -68,15 +67,3 @@ userSchema.pre("save", async function () {
 const userModel = mongoose.model("userModel", userSchema);
 
 module.exports = userModel;
-// (async function createUser() {
-//   let user = {
-//     name: "Princet",
-//     age: 10,
-//     email: "abcy@gmail.com",
-//     password: "12345678",
-//     confirmPassword: "12345678",
-//   };
-
-//   const userObj = await userModel.create(user);
-//   console.log(userObj);
-// })();
